@@ -2,21 +2,22 @@ source 'https://rubygems.org'
 ruby '2.7.3'
 
 gem 'bootsnap', require: false
+gem 'faker'
 gem 'pg', '~> 1.1'
-gem "puma", ">= 4.3.3"
+gem 'puma', '>= 4.3.3'
 gem 'rails', '~> 6.1.1'
 gem 'redis'
-gem 'faker'
 gem 'rest-client'
 
 gem 'autoprefixer-rails'
+gem 'devise'
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'nokogiri', '>= 1.11.0'
+gem 'rack', '>= 2.0.8'
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem "nokogiri", ">= 1.11.0"
-gem "rack", ">= 2.0.8"
 
 group :development do
   gem 'web-console', '>= 3.3.0'
