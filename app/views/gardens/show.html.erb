@@ -1,12 +1,12 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= @garden.banner_url %>'), url('https://source.unsplash.com/1200x700/?garden');">
   <% if @garden.user == current_user %>
-    <%= (link_to "+", garden_path(@garden), method: :delete, data: { confirm: "Are you   sure?" }, class: "card-remove-link") %>
+    <%= link_to "+", garden_path(@garden), method: :delete, data: { confirm: "Are you sure?" }, class: "garden-remove-link" %>
+    <%= link_to "Edit", edit_garden_path(@garden), id: "edit-link" %>
   <% end %>
   <div class="container">
     <h1><%= @garden.name %></h1>
   </div>
 </div>
-
 <div class="pt-30 container">
   <div class="cards">
     <% @garden.plants.each do |plant| %>

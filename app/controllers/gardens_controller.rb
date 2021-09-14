@@ -32,6 +32,20 @@ class GardensController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @garden = Garden.find(params[:id])
+  end
+
+  def update
+    @garden = Garden.find(params[:id])
+    @garden.update(garden_params)
+    if @garden.save
+      redirect_to garden_path(@garden)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def garden_params
