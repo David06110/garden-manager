@@ -1,7 +1,16 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <% unless user_signed_in? %>
+    <%= link_to new_user_session_path, class: "navbar-brand" do %>
+      <div class="logo">
+        <%= image_tag "farming.svg" %>
+      </div>
+        <p id="navbar-text">Login</p>
+    <% end %>
+  <% end %>
   <%= link_to root_path, class: "navbar-brand" do %>
     <div class="logo">
-      <%= image_tag "garden.svg" %>
+      <%= image_tag "circles.svg" %>
     </div>
+      <p id="navbar-text">Home</p>
   <% end %>
 </div>

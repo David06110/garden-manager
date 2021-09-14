@@ -16,13 +16,27 @@
     padding-top: 5px;
   }
   border-radius: 50%;
-  background: #1EDD88;
+  background: #b1d62be3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo:hover {
-  background: #1BCB7F;
-  transition: background 0.3s ease;
+  background: #cb8d1b;
+  transition: background 0.4s ease;
+}
+
+#navbar-text{
+  color: whitesmoke;
+  background-color: rgba(41, 41, 41, 0.289);
+  border-radius: 8px;
+  font-size: 12px;
+  text-align: center;
+  &:hover{
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+
+  }
 }
