@@ -9,6 +9,7 @@ gem 'rails', '~> 6.1.1'
 gem 'redis'
 gem 'rest-client'
 
+gem 'actionpack', '>= 6.1.4.1'
 gem 'autoprefixer-rails'
 gem 'devise'
 gem 'font-awesome-sass', '~> 5.6.1'
