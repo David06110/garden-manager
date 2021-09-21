@@ -3,7 +3,6 @@ class GardensController < ApplicationController
 
   def index
     @gardens = Garden.all
-    # pry.byebug
   end
 
   def show
