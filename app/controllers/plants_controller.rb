@@ -1,4 +1,9 @@
 class PlantsController < ApplicationController
+
+  def index
+    @gardens = Garden.where(user: current_user)
+  end
+
   def create
     @garden = Garden.find(params[:garden_id])
     @plant = Plant.new(plant_params)

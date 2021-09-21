@@ -2,7 +2,8 @@ require 'test_helper'
 
 class GardensControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @garden = gardens(:one)
+    sign_in_as users(:david)
+    garden = gardens(:one)
   end
 
   test "should get index" do
