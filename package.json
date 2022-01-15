@@ -12,7 +12,7 @@
     "is-svg": "^4.2.2",
     "jquery": "^3.5.0",
     "lodash": "^4.17.21",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "normalize-url": "^4.5.1",
     "popper.js": "^1.16.0",
     "postcss": "^8.2.10",
